@@ -44,35 +44,40 @@
 4.Ejecuta la app:
     python inicio.py
 
-🛠 Generar .exe con GitHub Actions
-El proyecto incluye un workflow automático para generar un ejecutable de Windows cada vez que haces push a main.
 
-Resultado:
-Puedes descargar el archivo .exe desde la pestaña Actions > Build EXE > Artifacts.
+
+🛠 Generar .exe con GitHub Actions
+    El proyecto incluye un workflow automático para generar un ejecutable de Windows cada vez que haces push a main.
+
+    Resultado:
+    Puedes descargar el archivo .exe desde la pestaña Actions > Build EXE > Artifacts.
+
+
 
 📁 Estructura del proyecto
-    App-Pdf-XML/
-├── inicio.py               # Script principal
-├── requirements.txt        # Dependencias
-├── README.md               # Este archivo
-├── .github/
-│   └── workflows/
-│       └── build.yml       # CI para generar .exe
-└── ...otros archivos...
+        App-Pdf-XML/
+    ├── inicio.py               # Script principal
+    ├── requirements.txt        # Dependencias
+    ├── README.md               # Este archivo
+    ├── .github/
+    │   └── workflows/
+    │       └── build.yml       # CI para generar .exe
+    └── ...otros archivos...
+
 
 💡 Tecnologías
-Python 3.10+
+    Python 3.10+
 
-pdfplumber
+    pdfplumber
 
-PyPDFium2
+    PyPDFium2
 
-ReportLab
+    ReportLab
 
-PyInstaller
+    PyInstaller
 
 👨‍💻 Autor
-Geovanny Lucena – @Geowar17
+    Geovanny Lucena – @Geowar17
 
 📄 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+    Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
