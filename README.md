@@ -28,25 +28,26 @@
 
 ## 📦 Instalación (modo desarrollo)
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/Geowar17/App-Pdf-XML.git
-   cd App-Pdf-XML
-
-2. Crea y activa un entorno virtual:
-    python -m venv env
-    source env/bin/activate  # En Mac/Linux
-    env\Scripts\activate     # En Windows
-
-3. Instala dependencias:
-    pip install -r requirements.txt
-
-4.Ejecuta la app:
-    python inicio.py
+    1. Clona el repositorio:
+       ```bash
+       git clone https://github.com/Geowar17/App-Pdf-XML.git
+       cd App-Pdf-XML
+    
+    2. Crea y activa un entorno virtual:
+        python -m venv env
+        source env/bin/activate  # En Mac/Linux
+        env\Scripts\activate     # En Windows
+    
+    3. Instala dependencias:
+        pip install -r requirements.txt
+    
+    4.Ejecuta la app:
+        python inicio.py
 
 
 
 🛠 Generar .exe con GitHub Actions
+    
     El proyecto incluye un workflow automático para generar un ejecutable de Windows cada vez que haces push a main.
 
     Resultado:
@@ -55,7 +56,8 @@
 
 
 📁 Estructura del proyecto
-        App-Pdf-XML/
+
+    App-Pdf-XML/
     ├── inicio.py               # Script principal
     ├── requirements.txt        # Dependencias
     ├── README.md               # Este archivo
@@ -65,19 +67,18 @@
     └── ...otros archivos...
 
 
-💡 Tecnologías
+💡 Tecnologías:
+
     Python 3.10+
-
     pdfplumber
-
     PyPDFium2
-
     ReportLab
-
     PyInstaller
 
 👨‍💻 Autor
-    Geovanny Lucena – @Geowar17
+    
+     Geovanny Lucena – @Geowar17
 
 📄 Licencia
+   
     Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
