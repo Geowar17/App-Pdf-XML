@@ -3,14 +3,15 @@ name: Build EXE
 on:
   push:
     branches:
-      - main  # o la rama que uses
+      - main
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -19,10 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pyinstaller
+          pip install -r requirements.txt
 
-      - name: Build executable
-        run: pyinstaller --onefile inicio.py  
+      - name: Build EXE with PyInstaller
+        run: pyinstaller --onefile inicio.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
