@@ -1,0 +1,31 @@
+name: Build EXE
+
+on:
+  push:
+    branches:
+      - main  # o la rama que uses
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install pyinstaller
+
+      - name: Build executable
+        run: pyinstaller --onefile inicio.py  
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: windo-exe
+          path: dist/*.exe
